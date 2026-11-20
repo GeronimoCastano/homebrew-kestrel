@@ -6,6 +6,11 @@ class Kestrel < Formula
   license "MIT"
   head "https://github.com/GeronimoCastano/kestrel.git", branch: "main"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "rust" => :build
 
   def install
