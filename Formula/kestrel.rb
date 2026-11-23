@@ -1,7 +1,7 @@
 class Kestrel < Formula
   desc "Programming language with checked contracts, proofs, and a native backend"
   homepage "https://github.com/GeronimoCastano/kestrel"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   livecheck do
@@ -11,18 +11,18 @@ class Kestrel < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.0/kestrel-aarch64-apple-darwin.tar.gz"
-      sha256 "76b18d067969009f946ca35d49ea72ef0695e2a34952a145026f39ebc3ff6e45"
+      url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.1/kestrel-aarch64-apple-darwin.tar.gz"
+      sha256 "853722e4f0480c4eb5d0f0befd715046c1432ed07e3a6ddac02e42d56ef69b65"
     end
     on_intel do
-      url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.0/kestrel-x86_64-apple-darwin.tar.gz"
-      sha256 "447ac3038b130acb0cd9f8627f1a050f43083b7cb979f5633ce452075e568181"
+      url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.1/kestrel-x86_64-apple-darwin.tar.gz"
+      sha256 "d8617f78059c4d64d18c4d9d0dde99810ed99e75f19250f87015ed2c96602638"
     end
   end
 
   on_linux do
-    url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.0/kestrel-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e064374998d5d98c54479571fbfffd3346e0be6b81287c15893c3d9559693db5"
+    url "https://github.com/GeronimoCastano/kestrel/releases/download/v0.3.1/kestrel-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "3f4c31ec748c2b193fe140e9239e4df6e246b7e8b7558a16f0bddc21cd9e9594"
 
     # macOS supplies Clang with the Command Line Tools and LAPACK with Accelerate.
     depends_on "llvm"
